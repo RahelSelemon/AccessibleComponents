@@ -61,7 +61,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   background: #f9f9f9;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 60px;
   text-align: left;
   line-height: 1.6;
@@ -130,7 +130,6 @@ figcaption {
   padding-left: 20px;
 }
 footer {
-  /* position: relative; Ensures it stays in the document flow */
   text-align: center;
   padding: 10px;
   background: #333;
