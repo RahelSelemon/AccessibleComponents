@@ -1,5 +1,3 @@
-index.html:
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,17 +71,17 @@ index.html:
           <div>
             <br>
             <figure>
-              <img src="images/Table 1.png" class="sec2-tbls" />
+              <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGFHVVum--AXiKWiSHe_Asgjk2iz7jRbt_Y5OBhCdx7YVHc_J5i3SD0eGRjibTe0XsU275GERLYtvx/pub?w=960&amp;h=615" class="sec2-tbls">              
               <figcaption>General observations from interacting with the dropdowns</figcaption>
             </figure>
             <br>
             <figure>
-              <img src="images/Table 2.png" class="sec2-tbls" />
+              <img src="https://docs.google.com/drawings/d/e/2PACX-1vQPujhBxbpBUW0LaOWtzWcD-cxvbuyx3LU3KxYNGgC9LFwa0Z6LmqmhDgZB8Y9e_-3Te9l-GfaVGT90/pub?w=825&amp;h=505" class="sec2-tbls">              
               <figcaption>Comparing output between dropdowns in various states</figcaption>
             </figure>
             <br>
             <figure>
-              <img src="images/Table 3.png" class="sec2-tbls" />
+              <img src="https://docs.google.com/drawings/d/e/2PACX-1vQ0xOH8aqSJCFp-MOQZVEvDS6w7TdMRymiMSFDmVcPQ_G0ifeLRDmJXcRep5K7BdPD0D56OYxRs8H-j/pub?w=955&amp;h=622" class="sec2-tbls">              
               <figcaption>Evaluating dropdown accessibility using VoiceOver</figcaption>
             </figure>
           </div>
@@ -191,15 +189,13 @@ index.html:
 
       <div id="section6" class="section">
         <h3>Reflection</h3>
-        <p>The dropdown menus I observed did well in terms of logically abstracting away extensive information in the menu options. Both Google Docs and Spotify used submenus that extended out to the right for additional options. I also liked how Doordash used an outline around the component to show that you can interact with it. I incorporated these things into my new design. In terms of accessibility for visually-impaired users, I also tried to improve contrast by using the accent colors already created by Spotify.</p>      
+        <p>The dropdown menus I observed did well in terms of logically abstracting away extensive information in the menu options (e.g. submenus that extended out to the right for additional options). I also liked how Doordash used an outline around the component to show that you can interact with it so I incorporated this into my new design. In terms of accessibility for visually-impaired users, I also tried to improve contrast by using the accent colors already created by Spotify. </p>      
         <br>
-        <p>I also tried to make the menu more straightforward to navigate with a keyboard and screen reader. With the current focus order laid out by Spotify, left/right arrow keys move between options. However, this makes it unintuitive to move from a submenu back into the main menu. With my new design, you have to explicitly open the submenu so that it opens below the label. This way you can use the Enter key to open it and use the up/down arrows to navigate the submenu. This change accounts for a mismatch when using Spotify as a visually-impaired person who wants to navigate the app using VoiceOver.</p>
+        <p>I also tried to make the menu more straightforward to navigate with a keyboard to account for mismatch when a visually-impaired person wants to use Spotify with VoiceOver. In the current focus order laid out by Spotify, left/right arrow keys move between options, which makes it unintuitive to move from a submenu back into the main menu. With my new design, you have to explicitly open the submenu so that it opens below the label. Then you can use the Enter key to open it and use the up/down arrows to navigate the submenu. </p>
         <br>
-        <p>When using Google Docs, the screen reader reads menu items in a jumbled and unclear way (e.g., “New n right pointing black pointer, submenu”). This negatively impacts users with visual or cognitive impairments, as they might find it difficult to understand the options or navigate effectively. The lack of clarity could make it difficult to complete tasks, such as creating a new document or accessing submenus.</p>
+        <p>In Google Docs, the screen reader reads menu items in a jumbled and unclear way which can negatively impact users with visual impairments, as they might find it difficult to understand/navigate the menu options and complete tasks. Initially, I marked the Spotify menu’s low latency as an objectively positive feature but after using VoiceOver, I found that it can also make navigation difficult for some users. If the screen reader responds too quickly to every minor interaction (hovering, clicking, or keystrokes), it may read out multiple items at once producing a flood of unintelligible auditory feedback. </p>
         <br>
-        <p>Initially, I marked Spotify’s low latency as an objectively positive feature when interacting with the menu. However, after using VoiceOver, I found that it can also make navigation difficult for some users. If the screen reader responds too quickly to every minor interaction (hovering, clicking, or keystrokes), it can produce a flood of auditory feedback. I often found that screen readers read out multiple items at once, making it hard to keep up or distinguish between them.</p>
-        <br>
-        <p>When creating components, mouse users seem to be the most commonly prioritized. Components usually respond to hover states, right-click menus, and drag-and-drop interactions, which are not easy to access with other input methods. I found that using a keyboard (and screen reader) was less intuitive and inconvenient, requiring more complex keystrokes. While all three applications worked relatively will with the mouse, Google Docs performed notably low with the keyboard and exemplified how important it is to fill in those gaps in order to be inclusive of all.</p>
+        <p>When creating components, mouse users seem to be the most commonly prioritized. Components usually respond to hover states, right-click menus, and drag-and-drop interactions, which are not easy to access with other input methods. I found that using a keyboard was less intuitive and inconvenient, requiring more complex and combined keystrokes.</p>
       </div>
       
     </div>
