@@ -1,204 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessible Components</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav class="sidebar">
-      <h1>Upgrading the Dropdown</h1>
-      <ul>
-        <li><a href="#section1">What is a dropdown menu?</a></li>
-        <li><a href="#section2">Thinking about different users</a></li>
-        <li><a href="#section3">What Spotify does well</a></li>
-        <li><a href="#section4">How can we make it better?</a></li>
-        <li><a href="#section5">Prototyping my revised design</a></li>
-        <li><a href="#section6">Reflection</a></li>
-      </ul>
-    </nav>
-    <div class="main-content">
-      <h2>Accessible Components Project</h2>
-      <div class="project-blurb">
-        Join me as I take a deep dive into a classic UI component—the dropdown menu! 
-        I'll analyze how it's designed across three different applications, evaluating its strengths and weaknesses in learnability, memorability, efficiency, and accessibility. 
-        Using these insights, I'll redesign the component to create a more seamless and inclusive experience for all users.
-      </div>
-     
-      <div id="section1" class="section">
-        <h3>What is a dropdown menu?</h3>
-        <p>
-          A dropdown menu is an interactive UI component that reveals a list of
-          options when clicked or hovered over. It’s extremely common in web
-          design in any context where you need to organize multiple choices
-          without overwhelming the screen. Your favorite website might use a
-          dropdown menu for navigation menus, settings, filters, and form
-          selections. Dropdowns improve organization by reducing clutter and
-          consolidating information, making them essential for modern, clean,
-          intuitive interfaces.
 
-          <br><br>Here are some examples: <br><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible Components</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-          <div class="image-container">
-            <figure>
-              <img src="images/doordash.png" class="sec1-imgs" />
-              <figcaption>Doordash website</figcaption>
-            </figure>
-            <figure>
-              <img src="images/spotify.png" alt="before1" class="sec1-imgs" />
-              <figcaption>Spotify app on Mac</figcaption>
-            </figure>
-            <figure>
-              <img src="images/googledocs.png" class="sec1-imgs" />
-              <figcaption>Google Docs website</figcaption>
-            </figure>
-          </div>
-        </p>
-      </div>
+<body>
+  <nav class="sidebar">
+    <h1>Redesigning the Dropdown</h1>
+    <ul>
+      <li><a href="#context">Context & Problem</a></li>
+      <li><a href="#audience">Audience</a></li>
+      <li><a href="#background">What is a Dropdown Menu?</a></li>
+      <li><a href="#evaluation">Evaluating Existing Designs</a></li>
+      <li><a href="#spotify">Case Focus: Spotify</a></li>
+      <li><a href="#opportunities">Opportunities for Improvement</a></li>
+      <li><a href="#iteration">Design Iteration & Prototype</a></li>
+      <li><a href="#reflection">Conclusion & Key Takeaways</a></li>
+    </ul>
+  </nav>
 
-      <div id="section2" class="section">
-        <h3>Thinking about different users</h3>
-        <p>
-          For this project, I interacted with the dropdowns while trying to keep different users in mind. 
-          As a user, I'm most comfortable navigating my laptop with a mousepad but I also tried using my keyboard and Mac's screenreader, VoiceOver.
-          <div>
-            <br>
-            <figure>
-              <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGFHVVum--AXiKWiSHe_Asgjk2iz7jRbt_Y5OBhCdx7YVHc_J5i3SD0eGRjibTe0XsU275GERLYtvx/pub?w=960&amp;h=615" class="sec2-tbls">              
-              <figcaption>General observations from interacting with the dropdowns</figcaption>
-            </figure>
-            <br>
-            <figure>
-              <img src="https://docs.google.com/drawings/d/e/2PACX-1vQPujhBxbpBUW0LaOWtzWcD-cxvbuyx3LU3KxYNGgC9LFwa0Z6LmqmhDgZB8Y9e_-3Te9l-GfaVGT90/pub?w=825&amp;h=505" class="sec2-tbls">              
-              <figcaption>Comparing output between dropdowns in various states</figcaption>
-            </figure>
-            <br>
-            <figure>
-              <img src="https://docs.google.com/drawings/d/e/2PACX-1vQ0xOH8aqSJCFp-MOQZVEvDS6w7TdMRymiMSFDmVcPQ_G0ifeLRDmJXcRep5K7BdPD0D56OYxRs8H-j/pub?w=955&amp;h=622" class="sec2-tbls">              
-              <figcaption>Evaluating dropdown accessibility using VoiceOver</figcaption>
-            </figure>
-          </div>
-        </p>
-      </div>
-
-      <div id="section3" class="section">
-        <h3>What Spotify does well</h3>
-        <p>
-          For now, let’s focus on one of my FAVORITE applications. What is Spotify’s take on
-          the classic component? In this example, Spotify provides a list of
-          additional options for a given album: <br><br>
-
-          <div class="image-container">
-            <figure>
-              <img src="images/before1.png" alt="before1" class="sec3-imgs" />
-              <figcaption>Before - Default state (unclicked)</figcaption>
-            </figure>
-            <figure>
-              <img src="images/before2.png" class="sec3-imgs" />
-              <figcaption>Before - Selected state (clicked)</figcaption>
-            </figure>
-            <figure>
-              <img src="images/before3.png" class="sec3-imgs" />
-              <figcaption>Before - Option hover state</figcaption>
-            </figure>
-          </div>
-
-          Here’s what I like about their execution:<br> 
-          <ul>
-            <li>Spotify indicates that the Options icon is interactive by highlighting it when your mouse hovers over it.</li>
-            <li>The location on the page is intuitive.</li>
-            <li>It appears on a menu bar BELOW the album but ABOVE the songs. This is also convenient when navigating the page with the tab key. </li>
-            <li>The icons for each option are explanatory and effective.</li>
-            <li>Organizing options into submenus makes it efficient with space on the screen. No need to scroll!</li>
-            <li>Spotify highlights options and opens submenus on hover as well.</li>
-            <li>You can use up/down arrows to navigate the menu options which is also intuitive. When you reach the bottom, the focus order just circles back to the top!</li>
-          </ul>
-        </p>
-      </div>
-
-      <div id="section4" class="section">
-        <h3>How can we make it better?</h3>
-        Here are diagrams summarizing the state changes for the current dropdown menu design
-
-        <div>
-          <br>
-          <figure>
-            <img src="images/MouseModel1.png" class="sec4-mdls" />
-            <figcaption>State model for mouse user</figcaption>
-          </figure>
-          <br>
-          <figure>
-            <img src="images/KeyboardModel1.png" class="sec4-mdls" />
-            <figcaption>State model for keyboard user</figcaption>
-          </figure>
-        </div>
-    
-          <br>There's definitely room for improvement here! Let's make this more screenreader-friendly.
-        
-        <div>
-            <br><br>
-          <figure>
-            <img src="images/MouseModel2.png" class="sec4-mdls" />
-            <figcaption>Revised state model for mouse user</figcaption>
-          </figure>
-          <figure>
-            <img src="images/KeyboardModel2.png" class="sec4-mdls" />
-            <figcaption>Revised state model for keyboard user</figcaption>
-          </figure> 
-        </div>
-      </div>
-
-      <div id="section5" class="section">
-        <h3>Prototyping my revised design</h3>
-        <figure>        
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="750" height="300" src="https://embed.figma.com/design/xgM5IOh9LW8ytiB8r4NUsC/Accessible-dropdown?node-id=0-1&embed-host=share" allowfullscreen></iframe>
-          <figcaption>Redesigning Spotify's Dropdown</figcaption>
-        </figure>
-        <p>
-          As we can see, the current design is already functional, but small tweaks can make a big difference in usability for all. Here’s how I improved it:
-        </p>
-        <h4><u>Clearer Interaction & Feedback</u></h4>
-        <ul>
-          <li>The <b>menu icon turns green when active</b>, providing stronger visual confirmation than the subtle gray-to-white transition in the original design.</li>
-        </ul>
-        <h4><u>Improved Discoverability & Ease of Use</u></h4>
-        <ul>
-          <li><b>Icons enlarge on hover</b>, signaling interactivity and making it clear that an action can be performed.</li>
-          <li>The menu icon’s <b>dots are bigger and better spaced</b>, improving click accuracy and making it harder to miss.</li>
-          <li>A <b>subtle outline around the icon</b> separates the pop-up menu from the background, enhancing contrast and visibility.</li>
-        </ul>
-        <h4><u>Better Layout & Organization</u></h4>
-        <ul>
-          <li><b>More spacing between options</b> reduces accidental selections, making the menu easier to navigate with a mouse.</li>
-          <li>Grouping related actions into expandable submenus<b></b> (accordion-style) keeps the interface clean and structured, reducing cognitive load.</li>
-          <li><b>Frequently used options are now placed near the top</b>, making navigation more intuitive.</li>
-        </ul>
-        <h4><u>Enhanced Accessibility for Screen Reader Users</u></h4>
-        <ul>
-          <li>The menu is now <b>structured into logical sections</b>, preventing an overwhelming list of options.</li>
-          <li><b>Users can control what they hear</b> and skip past submenus when navigating with a keyboard—accordion menus only expand on mouse click or Enter key.</li>
-        </ul>
-      </div>
-
-      <div id="section6" class="section">
-        <h3>Reflection</h3>
-        <p>The dropdown menus I observed did well in terms of logically abstracting away extensive information in the menu options (e.g. submenus that extended out to the right for additional options). I also liked how Doordash used an outline around the component to show that you can interact with it so I incorporated this into my new design. In terms of accessibility for visually-impaired users, I also tried to improve contrast by using the accent colors already created by Spotify. </p>      
-        <br>
-        <p>I also tried to make the menu more straightforward to navigate with a keyboard to account for mismatch when a visually-impaired person wants to use Spotify with VoiceOver. In the current focus order laid out by Spotify, left/right arrow keys move between options, which makes it unintuitive to move from a submenu back into the main menu. With my new design, you have to explicitly open the submenu so that it opens below the label. Then you can use the Enter key to open it and use the up/down arrows to navigate the submenu. </p>
-        <br>
-        <p>In Google Docs, the screen reader reads menu items in a jumbled and unclear way which can negatively impact users with visual impairments, as they might find it difficult to understand/navigate the menu options and complete tasks. Initially, I marked the Spotify menu’s low latency as an objectively positive feature but after using VoiceOver, I found that it can also make navigation difficult for some users. If the screen reader responds too quickly to every minor interaction (hovering, clicking, or keystrokes), it may read out multiple items at once producing a flood of unintelligible auditory feedback. </p>
-        <br>
-        <p>When creating components, mouse users seem to be the most commonly prioritized. Components usually respond to hover states, right-click menus, and drag-and-drop interactions, which are not easy to access with other input methods. I found that using a keyboard was less intuitive and inconvenient, requiring more complex and combined keystrokes.</p>
-      </div>
-      
+  <div class="main-content">
+    <h2>Accessible Components Case Study</h2>
+    <div class="project-blurb">
+      I explored dropdown menus—one of the most widely used UI components—and found significant accessibility issues across platforms. This case study walks through my analysis and redesign process to make dropdowns more inclusive and intuitive.
     </div>
-    <footer>Rahel Selemon, CSCI1300 Spring 2025 </footer>
-  </body>
+
+    <div id="context" class="section">
+      <h3>Why Dropdowns Deserve a Rethink</h3>
+      <p>
+        Dropdown menus are commonly used in web and app interfaces to group multiple options into a single element. 
+        However, they often fall short in accessibility, especially for screen reader users and keyboard navigators. 
+        I wanted to explore how small changes in structure and feedback could improve this core component for all users.
+      </p>
+    </div>
+
+    <div id="audience" class="section">
+      <h3>Who I Designed This For</h3>
+      <p>
+        This project focuses on improving the experience of:
+        <ul>
+          <li>Mouse users navigating visually</li>
+          <li>Keyboard users relying on focus order</li>
+          <li>Screen reader users needing semantic clarity</li>
+        </ul>
+        I wanted to ensure that the redesign was usable without sacrificing visual aesthetics or familiarity.
+      </p>
+    </div>
+
+    <div id="background" class="section">
+      <h3>What is a Dropdown Menu?</h3>
+      <p>
+        A dropdown menu is a compact UI element that reveals a list of options. It helps reduce visual clutter and organizes choices efficiently.
+        Common uses include navigation menus, settings, filters, and form selections.
+      </p>
+      <div class="image-container">
+        <figure>
+          <img src="images/doordash.png" class="dropdown-imgs"/>
+          <figcaption>Doordash</figcaption>
+        </figure>
+        <figure>
+          <img src="images/spotify.png" class="dropdown-imgs" />
+          <figcaption>Spotify</figcaption>
+        </figure>
+        <figure>
+          <img src="images/googledocs.png" class="dropdown-imgs" />
+          <figcaption>Google Docs</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div id="evaluation" class="section">
+      <h3>Evaluating Existing Designs</h3>
+      <p>
+        I evaluated dropdowns in Doordash, Spotify, and Google Docs using a mouse, keyboard, and screen reader. Here’s what I found:
+      </p>
+      <figure>
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTGFHVVum--AXiKWiSHe_Asgjk2iz7jRbt_Y5OBhCdx7YVHc_J5i3SD0eGRjibTe0XsU275GERLYtvx/pub?w=960&amp;h=615" class="tables">
+        <figcaption>General observations</figcaption>
+      </figure>
+      <figure>
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vQPujhBxbpBUW0LaOWtzWcD-cxvbuyx3LU3KxYNGgC9LFwa0Z6LmqmhDgZB8Y9e_-3Te9l-GfaVGT90/pub?w=825&amp;h=505" class="tables">
+        <figcaption>Visual comparison of different states</figcaption>
+      </figure>
+      <figure>
+        <img src="https://docs.google.com/drawings/d/e/2PACX-1vQ0xOH8aqSJCFp-MOQZVEvDS6w7TdMRymiMSFDmVcPQ_G0ifeLRDmJXcRep5K7BdPD0D56OYxRs8H-j/pub?w=955&amp;h=622" class="tables">
+        <figcaption>VoiceOver output from screen reader tests</figcaption>
+      </figure>
+    </div>
+
+    <div id="spotify" class="section">
+      <h3>Case Focus: Spotify</h3>
+      <p>
+        Spotify’s dropdown is well-placed and visually clear. It responds to both mouse and keyboard users effectively, and groups options into logical categories.
+      </p>
+      <div class="image-container">
+        <figure><img src="images/before1.png" class="spotify-imgs"><figcaption>Default state</figcaption></figure>
+        <figure><img src="images/before2.png" class="spotify-imgs"><figcaption>Expanded state</figcaption></figure>
+        <figure><img src="images/before3.png" class="spotify-imgs"><figcaption>Hover state</figcaption></figure>
+      </div>
+      <ul>
+        <li>Hover feedback is immediate and helpful</li>
+        <li>Logical menu placement between album title and track list</li>
+        <li>Icons are clear and navigation is cyclical with keyboard</li>
+      </ul>
+    </div>
+
+    <div id="opportunities" class="section">
+      <h3>Opportunities for Improvement</h3>
+      <p>Despite strengths, there were accessibility gaps, especially in screen reader structure and keyboard flow. I created revised state diagrams to address these issues.</p>
+      <div class="image-container">
+        <figure><img src="images/MouseModel1.png" class="models"><figcaption>Original mouse flow</figcaption></figure>
+        <figure><img src="images/KeyboardModel1.png" class="models"><figcaption>Original keyboard flow</figcaption></figure>
+        <figure><img src="images/MouseModel2.png" class="models"><figcaption>Revised mouse flow</figcaption></figure>
+        <figure><img src="images/KeyboardModel2.png" class="models"><figcaption>Revised keyboard flow</figcaption></figure>
+      </div>
+    </div>
+
+    <div id="iteration" class="section">
+      <h3>Design & Prototype</h3>
+      <figure>
+        <iframe width="750" height="300" src="https://embed.figma.com/design/xgM5IOh9LW8ytiB8r4NUsC/Accessible-dropdown?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+        <figcaption>Final redesigned prototype</figcaption>
+      </figure>
+      <h4><u>Key Improvements</u></h4>
+      <ul>
+        <li><b>Improved feedback:</b> Active icon state is clearly visible</li>
+        <li><b>Better discoverability:</b> Icons enlarge on hover and have more spacing</li>
+        <li><b>Accessible layout:</b> Logical groupings and screen reader-friendly accordion behavior</li>
+      </ul>
+    </div>
+
+    <div id="reflection" class="section">
+      <h3>Takeaways</h3>
+      <ul>
+        <li><b>Mouse users are often prioritized</b> in dropdown design, but keyboard and screen reader experiences suffer as a result.</li>
+        <li>Improving <b>focus order and menu structure</b> made navigation significantly more intuitive.</li>
+        <li>Subtle enhancements—like active outlines, larger icons, and grouped actions—had a big impact on usability.</li>
+        <li>I learned that <b>VoiceOver can be overwhelmed by poor structure</b>; thoughtful spacing and sectioning matter a lot.</li>
+        <li>Testing across multiple input modes (mouse, keyboard, screen reader) is essential for inclusive design.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer>Rahel Selemon, CSCI1300 Spring 2025 </footer>
+  
+</body>
 </html>
